@@ -10,10 +10,11 @@ Dependencies
 - PyCrypto (https://www.dlitz.net/software/pycrypto)
 - Mutagen (https://bitbucket.org/lazka/mutagen)
 
-Optional dependencies
+Further non-python dependencies
 ---------------------
 
 - adb (Android SDK Tools - https://developer.android.com/sdk/index.html#Other)
+- ImageMagick (http://www.imagemagick.org/)
 
 Usage
 -----
@@ -36,13 +37,15 @@ Help
     Options:
       --version             show program's version number and exit
       -h, --help            show this help message and exit
-      -a ADB, --adb=ADB     path to adb executable
+      -a ARTWORK, --artwork=ARTWORK    
+                            local path to directory with artwork files (will
+                            be downloaded from device via adb if not specified)
       -d DATABASE, --database=DATABASE
                             local path to Google Play Music database file (will be
                             downloaded from device via adb if not specified)
       -l LIBRARY, --library=LIBRARY
                             local path to directory with encrypted MP3 files (will
-                            be downloaded from device via adb if not specified
+                            be downloaded from device via adb if not specified)
       -r REMOTE, --remote=REMOTE
                             remote path to directory with encrypted MP3 files on
                             device (default:
