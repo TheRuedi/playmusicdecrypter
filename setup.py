@@ -10,7 +10,7 @@ setup(name = "playmusicdecrypter",
       author_email = "playmusicdecrypter@centrum.cz",
       url = "https://github.com/playmusicdecrypter/playmusicdecrypter",
       license = "GNU GPLv3",
-      py_modules=["playmusicdecrypter", "superadb"],
-      scripts = ["playmusicdecrypter", "superadb"],
+      py_modules=["playmusicdecrypter"],
+      scripts = ["playmusicdecrypter"],
       requires = ["pycrypto", "mutagen"]
 )
